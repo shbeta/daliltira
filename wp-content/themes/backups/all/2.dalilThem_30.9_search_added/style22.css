@@ -1,0 +1,49 @@
+*{
+	box-sizing: border-box;
+}
+
+form{
+	width: 100%;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+input[type=text]{
+	width: 80%;
+	padding: 15px;
+	border: none;
+	font-size: 18px;
+	font-family: sans-serif;
+	border-radius: 5px 0 0 5px;
+
+}
+
+input[type=submit]{
+	padding: 15px;
+	border: none;
+	font-size: 18px;
+	font-family: sans-serif;
+	background: orange;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	position: absolute;
+}
+
+@media screen and (max-width: 600px){
+	input[type=text]{
+		width:100%;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	input[type=submit]{
+		border-radius: 5px;
+		width: 100%;
+		position: static;
+		margin-top: 5px;
+		padding: 10px;
+	}
+}
